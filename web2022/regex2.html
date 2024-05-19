@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">name</label>
+    <input type="text" id="nam">
+    <button id="btn1">inter</button>
+
+    <script>
+       
+        let mybt=document.querySelector("#btn1");
+
+        mybt.addEventListener('click',()=>{
+            let myjina=document.querySelector("#nam");
+
+        let jina=/^[a-z1-9]{5}$/
+
+        let mim = jina.test(myjina.value);
+
+        if(!mim){
+            alert("study hard");
+        }else{
+            alert("very good");
+        }
+
+
+        });
+
+
+
+        let myname=/^[a-z1-9]{5}$/
+
+        let my=myname.test('mimd3');
+        console.log(my);
+    </script>
+</body>
+</html>

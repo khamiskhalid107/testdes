@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <form action=""  id="registrationForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="registrationNumber">Registration Number</label>
+        <input type="text" id="registNumber" required>
+
+        <label for="dob" >DOB</label>
+        <input type="date" id="dob">
+
+        <label for="program">Program</label>
+        <input type="text" id="program" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="tempAddress">Temporary Address</label>
+        <input type="text" id="temp" required>
+
+        <label for="Permanent">Permanent Address</label>
+        <input type="text" id="permanent" required>
+
+        <label for="Phone">Phone number </label>
+        <input type="Phone" id="phone">
+
+        <input type="submit" value="submit">
+    </form>
+
+        <Script>
+            const name1 = document.querySelector("#name");
+            const registrationn= document.querySelector("#registNumber");
+            const date = document.querySelector("#dob");
+            const prog=document.querySelector("#program");
+            const email1=document.querySelector("#email");
+            const tempA = document.querySelector("#temp");
+            const perma=document.querySelector("#permanent");
+            const phone1=document.querySelector("#phone");
+
+            const mobile=/^[0-9]{10}$/;
+            const regstrat=/^[a-zA-Z1-9]{22}$/;
+            const nameR=/^[a-z]{22}$/;
+            const emailR=/^[a-z1-9]{6}\@{1}[a-z]{4}[.]{1}[a-z]{7}/;
+
+            registrationForm.addEventListener("submit",function (event){
+                if(!mobile.test(phone.value)){
+                    alert("moble is invalid");
+                    //event.preventDefault();
+                }
+
+                if(!nameR.test(name.value)){
+                    alert("wrong name");
+                }
+
+                if(emailR.test(email.value)){
+                    alert("input email");
+                }
+                if(registrat.test(registNumber.value)){
+                    alert("not success");
+                }
+            })
+
+
+        </Script>
+
+  
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex</title>
+</head>
+<body>
+
+    <!-- bbbbbbbbbb -->
+
+    <form action="">
+       phone  <input type="number" name="phone" id="phone">
+
+       Register <input type="number" name="RegisterNumber" id="register">
+        <button type="submit">submit</button>
+    </form>
+    
+<script>
+
+
+let phonenumber = document.querySelector("#phone").value;
+
+
+
+
+let phonn= /^[0-9]{10}$/
+
+let testphon = phonn.test(phonn);
+
+//alert("jawabu ni "+ phonenumber);
+let reg = document.querySelector("#register").value;
+
+let regs =/^[a-zA-Z1-9]\d{30}$/
+
+let regist = regs.test("reg");
+console.log(reg);
+
+//mwisho la tano b
+
+//5 b b
+let register=/^[a-zA-Z]{34}$/
+
+let newre =register.test("dfg66545");
+
+//mwisho 
+
+//5 b c
+
+let charac = /[a-zA-Z]{30}$/
+
+let heruf=charac.test("charact");
+
+//5bd
+
+email = /^[a-zA-Z]{3,20}\@{1}[a-z]{3,4}[.]{1}[a-z]{3}$/
+
+
+
+    let americanExpress = /^(34|37)\d{13}$/
+
+    let test = americanExpress.test("345678987654675");
+
+    console.log(test);
+
+    let mastercad = /^(51|55)\d{14}$/
+    let test1 = mastercad.test("5567585775655");
+    console.log(test1);
+    if(!test){
+        console.log("invalid master card");
+    }
+
+    let visa = /^(4)\d{12,15}$/
+
+    let test2 = visa.test("4826264565565443");
+    console.log(test2);
+
+    let discover = /^(6011)d\{15}$/
+
+</script>
+
+</body>
+</html>

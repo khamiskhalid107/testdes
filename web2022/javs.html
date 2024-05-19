@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ju">Masjid jumbi</h1>
+
+    <button id="btn">press</button>
+
+    <h1 id="hellow">HELLOW</h1>
+
+    <button id="re">Red</button>
+    <Button id="blu">Blue</Button>
+    <Button id="gre">Green</Button>
+
+    <Script>
+        const first=document.querySelector("#ju");
+        const mybtn =document.querySelector("#btn");
+
+        const myhead=document.querySelector("#hellow");
+        const btn1=document.querySelector("#re");
+        const btn2=document.querySelector("#blu");
+        const btn3=document.querySelector("#gre");
+
+        btn1.addEventListener('click',function(){
+            myhead.style.color="red";
+        });
+
+        btn2.addEventListener('click',()=>{
+            myhead.style.color="blue";
+        });
+
+        mybtn.addEventListener('click',function(){
+            first.textContent=first.textContent.toUpperCase();
+        });
+
+        btn3.addEventListener('click',()=>{
+            myhead.style.color="green";
+        });
+
+    </Script>
+</body>
+</html>

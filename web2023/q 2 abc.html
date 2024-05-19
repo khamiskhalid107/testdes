@@ -1,0 +1,26 @@
+// a. Set image src attribute
+function setImagesSrc() {
+    const images = document.querySelectorAll('img');
+    images.forEach((img) => {
+        img.src = 'https://media.giphy.com/media/jaqvaWqpkflmQ/giphy.gif';
+    });
+}
+
+// b. Capitalize paragraphs
+function capitalizeParagraphs() {
+    const paragraphs = document.querySelectorAll('p');
+    paragraphs.forEach((p) => {
+        p.textContent = p.textContent.toUpperCase();
+    });
+}
+
+// c. Promise
+const myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve('Promise is done!');
+    }, 5000);
+});
+
+myPromise.then((message) => {
+    console.log(message);
+});

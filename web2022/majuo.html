@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="nam" required>
+    <button id="btnn">bonyeza</button>
+
+    <h1 id="hellow">Hellow</h1>
+
+    <button id="re">red</button>
+    <button id="blu">blue</button>
+    <button id="green">green</button>
+
+    <script>
+
+
+        const myhead=document.querySelector("#hellow");
+        const bt1=document.querySelector("#re");
+        const btn2=document.querySelector("#blu");
+        const btn3=document.querySelector("#green");
+
+
+        bt1.addEventListener('click' ,()=>{
+            myhead.style.color="red";
+        });
+        bt1.addEventListener('mouseover',function(){
+            myhead.style.color='pink';
+        });
+
+        btn2.addEventListener('click',()=>{
+            myhead.textContent=myhead.textContent.toUpperCase();
+        })
+        btn3.addEventListener('mouseover',function(){
+            myhead.style.color='blue';
+        });
+        btn3.addEventListener('click',function(){
+            myhead.style.color='green';
+        });
+
+        btn2.addEventListener('mouseover',function(){
+            myhead.style.color='yellow';
+        });
+
+        btn3.addEventListener('mouseout',function(){
+            myhead.textContent=myhead.textContent.toLowerCase();
+        });
+
+
+        
+        const button = document.querySelector("#btnn");
+
+        button.addEventListener('click',function(){
+            const myname1=document.querySelector("#nam");
+
+            let name1=/^[a-z]{4}[1-9]{3}\@{1}[a-z]{5}[.]{1}[a-z]{3}$/
+
+            let myname=name1.test(myname1.value);
+
+            if(!myname){
+                alert("wrong");
+            }else{
+                alert("good");
+            }
+        })
+      
+
+        
+
+        //let myname=name.test("khami");
+        //console.log(myname);
+    </script>
+
+</body>
+</html>
